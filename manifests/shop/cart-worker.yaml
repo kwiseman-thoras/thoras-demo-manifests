@@ -24,6 +24,6 @@ metadata:
   name: cart-worker
   namespace: shop
 spec:
-  minAvailable: 2   # == replicas, so 0 disruptions allowed
+  minAvailable: 1   # == replicas, so 0 disruptions allowed
   selector:
     matchLabels: {app: cart-worker}
